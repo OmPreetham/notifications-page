@@ -3,4 +3,5 @@
 
 @mixin notification-image() {
   width: $width-notification-image;
+  cursor: pointer;
 }

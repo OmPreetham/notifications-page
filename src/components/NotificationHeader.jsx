@@ -1,11 +1,13 @@
-const NotificationHeader = () => {
+const NotificationHeader = ({ toggleMark, mark }) => {
   return (
     <header className="notification__header header">
       <div className="header__heading">
         <h1 className="header__title">Notifications</h1>
-        <p className="header__count">3</p>
+        {mark && <p className="header__count">7</p>}
       </div>
-      <p className="header__toggle">Mark all as read</p>
+      <p onClick={toggleMark} className="header__toggle">
+        {mark ? 'Mark all as read' : 'Mark all as unread'}
+      </p>
     </header>
   )
 }

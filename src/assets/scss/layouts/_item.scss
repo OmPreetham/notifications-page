@@ -16,7 +16,9 @@
 
   cursor: pointer;
 
-  &-read {
+  transition: background-color 0.3s ease-in-out;
+
+  &--read {
     background-color: $clr-neutral-very-light-grayish-blue;
   }
 
@@ -68,10 +70,6 @@
 
       z-index: 1;
     }
-  }
-
-  &__unread-dot--none {
-    display: none;
   }
 
   &__time {
