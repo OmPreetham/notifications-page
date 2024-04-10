@@ -26,9 +26,13 @@ Desktop
 
 ![Desktop Preview](/public/preview-desktop.png)
 
+![Desktop Preview Active Message](/public/preview-desktop-active-message.png)
+
 Mobile
 
-![Mobile Preview](/public/preview-mobile.png)
+![Mobile Preview Unread](/public/preview-mobile-unread.png)
+
+![Mobile Preview Active Message](/public/preview-mobile-active-message.png)
 
 ## Getting Started
 
