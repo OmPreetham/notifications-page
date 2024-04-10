@@ -1,6 +1,6 @@
 @use '../utils/variables' as *;
 @use '../base/topography' as *;
 
-@mixin avatar() {
-  width: $width-avatar;
+@mixin notification-image() {
+  width: $width-notification-image;
 }

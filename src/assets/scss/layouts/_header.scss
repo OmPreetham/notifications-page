@@ -4,6 +4,7 @@
 
 .header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: $gap-base;
 
@@ -15,13 +16,19 @@
 
   &__count {
     @include unread-number;
+
+    cursor: pointer;
   }
 
   &__title {
     @include font-heading1-bold;
+
+    cursor: pointer;
   }
 
   &__toggle {
     @include font-toggle-mid;
+
+    cursor: pointer;
   }
 }

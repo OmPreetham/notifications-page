@@ -1,19 +1,37 @@
 @use '../utils/variables' as *;
 @use '../base/topography' as *;
 @use '../components/avatar' as *;
+@use '../components/notification-image' as *;
 
 .item {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: $gap-base;
+  gap: $gap-base-2;
 
-  padding: 1rem;
+  padding-block: 1.1rem;
+  padding-inline: 1.4rem;
 
   border-radius: 0.5rem;
 
+  cursor: pointer;
+
   &-read {
     background-color: $clr-neutral-very-light-grayish-blue;
+  }
+
+  &__avatar {
+    @include avatar;
+  }
+
+  &__avatar--start {
+    margin-bottom: auto;
+  }
+
+  &__notification-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
   }
 
   &__content {
@@ -21,9 +39,79 @@
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: $gap-base;
   }
 
-  &__avatar {
-    @include avatar;
+  &__notification {
+    @include font-notification-mid;
+  }
+
+  &__name {
+    @include font-name-bold;
+    margin-right: 0.2rem;
+  }
+
+  &__unread-dot {
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background-color: $clr-primary-red;
+      border-radius: 50%;
+
+      position: absolute;
+      right: -0.9rem;
+      bottom: 25%;
+
+      z-index: 1;
+    }
+  }
+
+  &__unread-dot--none {
+    display: none;
+  }
+
+  &__time {
+    @include font-notification-mid;
+  }
+
+  &__picture {
+    @include notification-image;
+  }
+
+  &__post {
+    @include font-post-bold;
+    margin-left: 0.2rem;
+  }
+
+  &__group {
+    @include font-group-bold;
+    margin-left: 0.2rem;
+  }
+
+  &__message {
+    @include font-message-mid;
+
+    margin-top: 0.5rem;
+    padding-block: 1em;
+    padding-inline: 1.2em;
+
+    border: 1px solid $clr-neutral-light-grayish-blue-2;
+
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: $clr-neutral-vight-grayish-blue-1;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .item {
+    padding: 1rem;
   }
 }

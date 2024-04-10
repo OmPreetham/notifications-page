@@ -12,8 +12,69 @@
 
 @mixin font-toggle-mid {
   font-size: $fs-toggle;
-  color: $clr-neutral-dark-grayish-blue;
+  color: $clr-neutral-grayish-blue;
   font-weight: $fw-500;
   font-family: $ff-plus-jakarta-sans;
   line-height: $lh-base;
+
+  transition: color 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $clr-primary-blue;
+  }
+}
+
+@mixin font-notification-mid {
+  font-size: $fs-notification;
+  color: $clr-neutral-grayish-blue;
+  font-weight: $fw-500;
+  font-family: $ff-plus-jakarta-sans;
+  line-height: $lh-normal;
+}
+
+@mixin font-name-bold {
+  font-size: $fs-notification;
+  color: $clr-neutral-very-dark-blue;
+  font-weight: $fw-800;
+  font-family: $ff-plus-jakarta-sans;
+  line-height: $lh-base;
+
+  transition: color 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $clr-primary-blue;
+  }
+}
+
+@mixin font-post-bold {
+  font-size: $fs-notification;
+  color: $clr-neutral-dark-grayish-blue;
+  font-weight: $fw-800;
+  font-family: $ff-plus-jakarta-sans;
+  line-height: $lh-base;
+
+  transition: color 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $clr-primary-blue;
+  }
+}
+
+@mixin font-group-bold {
+  font-size: $fs-notification;
+  color: $clr-primary-blue;
+  font-weight: $fw-800;
+  font-family: $ff-plus-jakarta-sans;
+  line-height: $lh-base;
+}
+
+@mixin font-message-mid {
+  font-size: $fs-notification;
+  color: $clr-neutral-grayish-blue;
+  font-weight: $fw-500;
+  font-family: $ff-plus-jakarta-sans;
+  line-height: $lh-normal;
 }

@@ -8,11 +8,19 @@
   max-width: $max-width-notification-wrapper;
 
   padding-block: 2.5rem;
-  padding-inline: 2rem;
+  padding-inline: 1.8rem;
 
   background-color: $clr-neutral-white;
 
   border-radius: 15px;
 
   box-shadow: 0 0 40px rgba(217, 217, 217, 0.493);
+}
+
+@media screen and (max-width: 750px) {
+  .notification {
+    padding-block: 1.5rem;
+    padding-inline: 1rem;
+    border-radius: 0;
+  }
 }

@@ -14,6 +14,7 @@ const NotificationList = () => {
                 <span className="item__name">Mark Webber</span> reacted to your
                 recent post{' '}
                 <span className="item__post">My first tournament today!</span>
+                <span className="item__unread-dot"></span>
               </p>
               <p className="item__time">1m ago</p>
             </div>
@@ -29,6 +30,7 @@ const NotificationList = () => {
             <div className="item__notification-wrapper">
               <p className="item__notification">
                 <span className="item__name">Angela Gray</span> followed you
+                <span className="item__unread-dot"></span>
               </p>
               <p className="item__time">5m ago</p>
             </div>
@@ -45,6 +47,7 @@ const NotificationList = () => {
               <p className="item__notification">
                 <span className="item__name">Jacob Thompson</span> has joined
                 your group <span className="item__group">Chess Club</span>
+                <span className="item__unread-dot"></span>
               </p>
               <p className="item__time">1 day ago</p>
             </div>
@@ -52,7 +55,7 @@ const NotificationList = () => {
         </li>
         <li className="notification__item item">
           <img
-            className="item__avatar"
+            className="item__avatar item__avatar--start"
             src="/images/avatar-rizky-hasanuddin.webp"
             alt="Rizky Hasanuddin"
           />
@@ -61,6 +64,7 @@ const NotificationList = () => {
               <p className="item__notification">
                 <span className="item__name">Rizky Hasanuddin</span> sent you a
                 private message
+                <span className="item__unread-dot item__unread-dot--none"></span>{' '}
               </p>
               <p className="item__time">5 days ago</p>
               <p className="item__message">
@@ -82,6 +86,7 @@ const NotificationList = () => {
               <p className="item__notification">
                 <span className="item__name">Kimberly Smith</span> commented on
                 your picture
+                <span className="item__unread-dot item__unread-dot--none"></span>{' '}
               </p>
               <p className="item__time">1 week ago</p>
             </div>
@@ -94,7 +99,7 @@ const NotificationList = () => {
         </li>
         <li className="notification__item item">
           <img
-            className="item__avatar"
+            className="item__avatar item__avatar--start"
             src="/images/avatar-nathan-peterson.webp"
             alt="Nathan Peterson"
           />
@@ -106,6 +111,7 @@ const NotificationList = () => {
                 <span className="item__post">
                   5 end-game strategies to increase your win rate
                 </span>
+                <span className="item__unread-dot item__unread-dot--none"></span>{' '}
               </p>
               <p className="item__time">2 weeks ago</p>
             </div>
@@ -122,6 +128,7 @@ const NotificationList = () => {
               <p className="item__notification">
                 <span className="item__name">Anna Kim</span> left the group{' '}
                 <span className="item__group">Chess Club</span>
+                <span className="item__unread-dot item__unread-dot--none"></span>
               </p>
               <p className="item__time">2 weeks ago</p>
             </div>

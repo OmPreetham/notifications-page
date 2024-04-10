@@ -25,6 +25,7 @@ $ff-plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;
 
 $fs-base: 1rem;
 $fs-toggle: 1rem;
+$fs-notification: 1rem;
 $fs-heading1: 1.5rem;
 
 // Font Weights
@@ -35,6 +36,7 @@ $fw-800: 800;
 // Line Heights
 
 $lh-base: 1;
+$lh-normal: 1.3;
 
 // Letter Spcaings
 
@@ -49,6 +51,9 @@ $min-width-screen: 375px;
 $max-width-screen: 1440px;
 $max-width-notification-wrapper: 730px;
 
+$width-avatar: 45px;
+$width-notification-image: 45px;
+
 // Heights
 
 $min-height-screen: 100vh;
@@ -59,5 +64,6 @@ $min-height-screen: 100vh;
 
 $gap-low: 0.5rem;
 $gap-base: 1rem;
+$gap-base-2: 1.2rem;
 $gap-mid: 1.5rem;
 $gap-mid-high: 2rem;
