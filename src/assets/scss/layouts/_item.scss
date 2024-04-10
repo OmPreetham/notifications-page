@@ -1,0 +1,29 @@
+@use '../utils/variables' as *;
+@use '../base/topography' as *;
+@use '../components/avatar' as *;
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: $gap-base;
+
+  padding: 1rem;
+
+  border-radius: 0.5rem;
+
+  &-read {
+    background-color: $clr-neutral-very-light-grayish-blue;
+  }
+
+  &__content {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__avatar {
+    @include avatar;
+  }
+}

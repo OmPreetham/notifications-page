@@ -1,0 +1,27 @@
+@use '../utils/variables' as *;
+@use '../base/topography' as *;
+@use '../components/unread-number' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: $gap-base;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    gap: $gap-base;
+  }
+
+  &__count {
+    @include unread-number;
+  }
+
+  &__title {
+    @include font-heading1-bold;
+  }
+
+  &__toggle {
+    @include font-toggle-mid;
+  }
+}

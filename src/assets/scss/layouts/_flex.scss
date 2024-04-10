@@ -1,0 +1,18 @@
+@use '../utils/variables' as *;
+
+.notification {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-mid-high;
+
+  max-width: $max-width-notification-wrapper;
+
+  padding-block: 2.5rem;
+  padding-inline: 2rem;
+
+  background-color: $clr-neutral-white;
+
+  border-radius: 15px;
+
+  box-shadow: 0 0 40px rgba(217, 217, 217, 0.493);
+}

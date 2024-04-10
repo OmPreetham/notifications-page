@@ -1,0 +1,10 @@
+@use '../utils/variables' as *;
+@use '../base/topography' as *;
+
+.notification__list {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-low;
+
+  padding-left: 0;
+}
