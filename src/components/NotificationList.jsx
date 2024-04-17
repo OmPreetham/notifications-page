@@ -5,7 +5,7 @@ const NotificationList = ({ mark }) => {
         <li className={`notification__item item ${mark && 'item--read'}`}>
           <img
             className="item__avatar"
-            src="/images/avatar-mark-webber.webp"
+            src="images/avatar-mark-webber.webp"
             alt="Mark Webber"
           />
           <div className="item__content">
@@ -23,7 +23,7 @@ const NotificationList = ({ mark }) => {
         <li className={`notification__item item ${mark && 'item--read'}`}>
           <img
             className="item__avatar"
-            src="/images/avatar-angela-gray.webp"
+            src="images/avatar-angela-gray.webp"
             alt="Angela Gray"
           />
           <div className="item__content">
@@ -39,7 +39,7 @@ const NotificationList = ({ mark }) => {
         <li className={`notification__item item ${mark && 'item--read'}`}>
           <img
             className="item__avatar"
-            src="/images/avatar-jacob-thompson.webp"
+            src="images/avatar-jacob-thompson.webp"
             alt="Jacob Thompson"
           />
           <div className="item__content">
@@ -56,7 +56,7 @@ const NotificationList = ({ mark }) => {
         <li className={`notification__item item ${mark && 'item--read'}`}>
           <img
             className="item__avatar item__avatar--start"
-            src="/images/avatar-rizky-hasanuddin.webp"
+            src="images/avatar-rizky-hasanuddin.webp"
             alt="Rizky Hasanuddin"
           />
           <div className="item__content">
@@ -78,7 +78,7 @@ const NotificationList = ({ mark }) => {
         <li className={`notification__item item ${mark && 'item--read'}`}>
           <img
             className="item__avatar"
-            src="/images/avatar-kimberly-smith.webp"
+            src="images/avatar-kimberly-smith.webp"
             alt="Kimberly Smith"
           />
           <div className="item__content">
@@ -92,7 +92,7 @@ const NotificationList = ({ mark }) => {
             </div>
             <img
               className="item__picture"
-              src="/images/image-chess.webp"
+              src="images/image-chess.webp"
               alt="Chess"
             />
           </div>
@@ -100,7 +100,7 @@ const NotificationList = ({ mark }) => {
         <li className={`notification__item item ${mark && 'item--read'}`}>
           <img
             className="item__avatar item__avatar--start"
-            src="/images/avatar-nathan-peterson.webp"
+            src="images/avatar-nathan-peterson.webp"
             alt="Nathan Peterson"
           />
           <div className="item__content">
@@ -120,7 +120,7 @@ const NotificationList = ({ mark }) => {
         <li className={`notification__item item ${mark && 'item--read'}`}>
           <img
             className="item__avatar"
-            src="/images/avatar-anna-kim.webp"
+            src="images/avatar-anna-kim.webp"
             alt="Anna Kim"
           />
           <div className="item__content">
